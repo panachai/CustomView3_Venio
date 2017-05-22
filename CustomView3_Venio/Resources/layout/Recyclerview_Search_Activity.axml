@@ -14,28 +14,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:paddingBottom="@dimen/margin_long"
-        android:paddingTop="@dimen/margin_long"
-        android:paddingLeft="@dimen/margin_long"
-        android:paddingRight="@dimen/margin_long">
+        android:padding="@dimen/margin_veryshort">
+    <!--
+	        android:paddingBottom="@dimen/margin_long"
+	        android:paddingTop="@dimen/margin_long"
+	        android:paddingLeft="@dimen/margin_long"
+	        android:paddingRight="@dimen/margin_long"-->
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="@dimen/margin_short">
+            android:padding="@dimen/margin_medium">
             <ImageView
                 android:id="@+id/imvDisplay"
                 android:src="@android:color/holo_blue_bright"
                 android:layout_width="50dp"
-                android:layout_height="50dp" />
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_veryshort" />
             <TextView
                 android:id="@+id/txtTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/text_large"
                 android:gravity="center"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/margin_veryshort" />
         </LinearLayout>
     <!-- Line -->
         <LinearLayout
@@ -46,25 +51,27 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_veryshort">
             <TextView
                 android:id="@+id/txtDate"
-                android:text="xx"
-                android:textSize="@dimen/text_medium"
-                android:layout_width="wrap_content"
+                android:text="27 นาที"
+                android:textSize="@dimen/text_small"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="right"
-                android:layout_marginTop="@dimen/margin_short"
                 android:textColor="@color/grey_text"
                 android:singleLine="true" />
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_long"
+                android:paddingRight="@dimen/margin_long">
                 <TextView
                     android:id="@+id/txtCustomerN"
                     android:text="x"
-                    android:textSize="@dimen/text_large"
+                    android:textSize="@dimen/text_subheading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="left"
@@ -73,7 +80,7 @@
                 <TextView
                     android:id="@+id/txtCustomerStatement"
                     android:text="xx"
-                    android:textSize="@dimen/text_medium"
+                    android:textSize="@dimen/text_large"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="left"
