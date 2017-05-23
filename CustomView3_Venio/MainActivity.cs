@@ -27,12 +27,12 @@ namespace CustomView3_Venio {
 			//AddAdapterListViewCustomer();
 
 			//listview Activity
-			AddDataActivity();
-			AddAdapterListViewActivity();
+			//AddDataActivity();
+			//AddAdapterListViewActivity();
 
 			//employee
-			//AddDataEmployee();
-			//AddAdapterListViewEmployee();
+			AddDataEmployee();
+			AddAdapterListViewEmployee();
 
 		}
 		void Init() {
@@ -50,17 +50,24 @@ namespace CustomView3_Venio {
 		}
 
 		void AddAdapterListViewEmployee() {
-			//CustomListViewSearchEmployee customListViewSearchEmployeeAdapter = new CustomListViewSearchEmployee(this, demoEmployeeModel); //listProductModel
-			//listviewEmployee.Adapter = customListViewSearchEmployeeAdapter;
-			//do continue+++++++++++++++++++++++++++++++++++++++++++++
+			CustomListViewSearchEmployee customListViewSearchEmployeeAdapter = new CustomListViewSearchEmployee(this, demoEmployeeModel); //listProductModel
+			listviewEmployee.Adapter = customListViewSearchEmployeeAdapter;
 		}
 
 		void AddDataEmployee() {
-			//lvEmployee
+
+			demoEmployeeModel.Add(new DemoEmployeeModel {
+				ImvPicture = "https://uploads4.wikiart.org/00115/images/pablo-picasso/iuyqtex0.jpeg!Portrait.jpeg",
+				TxtFullname = "Panachai Niyomkodchakorn",
+				TxtJobPosition = "เจ้าหน้าที่ Programmer (00)",
+				TxtEmail = "panachai.ny@gmail.com",
+				TxtTel = "0905607225"
+			});
+
+
 		}
 
 		//-------------------------------------------------------------
-
 		void AddAdapterListViewActivity() {
 			CustomListViewSearchActivity customListViewSearchActivityAdapter = new CustomListViewSearchActivity(this, demoActivityModel); //listProductModel
 			listviewActivity.Adapter = customListViewSearchActivityAdapter;

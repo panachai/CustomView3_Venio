@@ -1780,6 +1780,9 @@ namespace CustomView3_Venio
 			// aapt resource value: 0x7f0c0060
 			public const int imvDisplay = 2131492960;
 			
+			// aapt resource value: 0x7f0c0069
+			public const int imvEmployeePic = 2131492969;
+			
 			// aapt resource value: 0x7f0c005e
 			public const int info = 2131492958;
 			
@@ -1956,6 +1959,18 @@ namespace CustomView3_Venio
 			
 			// aapt resource value: 0x7f0c0062
 			public const int txtDate = 2131492962;
+			
+			// aapt resource value: 0x7f0c006c
+			public const int txtEmail = 2131492972;
+			
+			// aapt resource value: 0x7f0c006a
+			public const int txtFullname = 2131492970;
+			
+			// aapt resource value: 0x7f0c006b
+			public const int txtPosition = 2131492971;
+			
+			// aapt resource value: 0x7f0c006d
+			public const int txtTel = 2131492973;
 			
 			// aapt resource value: 0x7f0c0061
 			public const int txtTime = 2131492961;

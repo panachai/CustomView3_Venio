@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.an droid.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -11,41 +11,75 @@
         card_view:cardElevation="2dp"
         card_view:cardCornerRadius="2dp">
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/margin_long"
-            android:paddingTop="@dimen/margin_long"
-            android:paddingLeft="@dimen/margin_long"
-            android:paddingRight="@dimen/margin_long">
-            <TextView
-                android:id="@+id/txtCustomerName"
-                android:text="x"
-                android:textSize="@dimen/text_large"
+            android:background="@color/white"
+            android:padding="@dimen/margin_veryshort">
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="left"
-                android:textColor="@color/black"
-                android:singleLine="true" />
-            <TextView
-                android:id="@+id/txtCustomerContact"
-                android:text="xx"
-                android:textSize="@dimen/text_medium"
+                android:gravity="center"
+                android:padding="@dimen/margin_medium">
+                <ImageView
+                    android:id="@+id/imvEmployeePic"
+                    android:src="@android:color/holo_blue_bright"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_veryshort" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="left"
-                android:layout_marginTop="@dimen/margin_short"
-                android:textColor="@color/grey_text"
-                android:singleLine="true" />
-            <TextView
-                android:id="@+id/txtCustomerAddress"
-                android:text="xxx"
-                android:textSize="@dimen/text_medium"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:textColor="@color/grey_text"
-                android:singleLine="true" />
+                android:padding="@dimen/margin_veryshort">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_long"
+                    android:paddingRight="@dimen/margin_long">
+                    <TextView
+                        android:id="@+id/txtFullname"
+                        android:text="x"
+                        android:textSize="@dimen/text_subheading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:singleLine="true" />
+                    <TextView
+                        android:id="@+id/txtPosition"
+                        android:text="xx"
+                        android:textSize="@dimen/text_large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginTop="@dimen/margin_short"
+                        android:textColor="@color/grey_text"
+                        android:singleLine="true" />
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:text="xxx"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/grey_text"
+                        android:singleLine="true" />
+                    <TextView
+                        android:id="@+id/txtTel"
+                        android:text="xxx"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/grey_text"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>
