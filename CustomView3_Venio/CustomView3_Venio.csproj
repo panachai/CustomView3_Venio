@@ -70,6 +70,8 @@
     <Compile Include="Model\DemoActivityModel.cs" />
     <Compile Include="CustomListView\CustomListViewSearchActivity.cs" />
     <Compile Include="CustomListView\CustomListViewSearchCustomer.cs" />
+    <Compile Include="Model\DemoEmployeeModel.cs" />
+    <Compile Include="CustomListView\CustomListViewSearchEmployee.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

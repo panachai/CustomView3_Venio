@@ -14,6 +14,8 @@ namespace CustomView3_Venio {
 		List<DemoActivityModel> demoActivityModel;
 		ListView listviewActivity;
 
+		List<DemoEmployeeModel> demoEmployeeModel;
+		ListView listviewEmployee;
 		protected override void OnCreate(Bundle savedInstanceState) {
 			base.OnCreate(savedInstanceState);
 
@@ -28,6 +30,10 @@ namespace CustomView3_Venio {
 			AddDataActivity();
 			AddAdapterListViewActivity();
 
+			//employee
+			//AddDataEmployee();
+			//AddAdapterListViewEmployee();
+
 		}
 		void Init() {
 			//listview Customer
@@ -37,9 +43,23 @@ namespace CustomView3_Venio {
 			//listview Activity
 			demoActivityModel = new List<DemoActivityModel>();
 			listviewActivity = FindViewById<ListView>(Resource.Id.lvActivity);
+
+			//Employee
+			demoEmployeeModel = new List<DemoEmployeeModel>();
+			listviewEmployee = FindViewById<ListView>(Resource.Id.lvEmployee);
 		}
 
+		void AddAdapterListViewEmployee() {
+			//CustomListViewSearchEmployee customListViewSearchEmployeeAdapter = new CustomListViewSearchEmployee(this, demoEmployeeModel); //listProductModel
+			//listviewEmployee.Adapter = customListViewSearchEmployeeAdapter;
+			//do continue+++++++++++++++++++++++++++++++++++++++++++++
+		}
 
+		void AddDataEmployee() {
+			//lvEmployee
+		}
+
+		//-------------------------------------------------------------
 
 		void AddAdapterListViewActivity() {
 			CustomListViewSearchActivity customListViewSearchActivityAdapter = new CustomListViewSearchActivity(this, demoActivityModel); //listProductModel

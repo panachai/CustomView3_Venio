@@ -26,6 +26,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/margin_medium" />
+            <ListView
+                android:id="@+id/lvEmployee"
+                android:divider="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_medium" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
