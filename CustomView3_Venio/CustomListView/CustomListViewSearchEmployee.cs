@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Android.App;
 using Android.Views;
 using Android.Widget;
+using Square.Picasso;
 
 namespace CustomView3_Venio {
 	public class CustomListViewSearchEmployee : BaseAdapter {
@@ -48,7 +49,14 @@ namespace CustomView3_Venio {
 			} else {
 				viewholder = (ViewHolder)view.Tag;
 			}
+
 			//viewholder.imvPicture = demoEmployeeList[position].ImvPicture;
+
+			Picasso.With(activity)
+			   .Load("http://i.imgur.com/DvpvklR.png")
+			   .Transform(new CircleTransform())
+			   .Into(viewholder.imvPicture);
+
 			viewholder.txtFullname.Text = demoEmployeeList[position].TxtFullname;
 			viewholder.txtJobPosition.Text = demoEmployeeList[position].TxtJobPosition;
 			viewholder.txtEmail.Text = demoEmployeeList[position].TxtEmail;

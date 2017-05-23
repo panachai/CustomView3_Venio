@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.an droid.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -15,32 +15,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:padding="@dimen/margin_veryshort">
+            android:paddingRight="@dimen/margin_long"
+            android:paddingTop="@dimen/margin_long"
+            android:paddingBottom="@dimen/margin_long">
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="@dimen/margin_medium">
+                android:layout_height="match_parent"
+                android:gravity="center">
                 <ImageView
                     android:id="@+id/imvEmployeePic"
                     android:src="@android:color/holo_blue_bright"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
-                    android:layout_margin="@dimen/margin_veryshort" />
+                    android:layout_marginRight="@dimen/margin_long"
+                    android:layout_marginLeft="@dimen/margin_long" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/margin_veryshort">
+                android:layout_height="wrap_content">
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/margin_long"
-                    android:paddingRight="@dimen/margin_long">
+                    android:layout_height="wrap_content">
                     <TextView
                         android:id="@+id/txtFullname"
                         android:text="x"
@@ -60,24 +59,35 @@
                         android:layout_marginTop="@dimen/margin_short"
                         android:textColor="@color/grey_text"
                         android:singleLine="true" />
-                    <TextView
-                        android:id="@+id/txtEmail"
-                        android:text="xxx"
-                        android:textSize="@dimen/text_medium"
+                    <LinearLayout
+                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="left"
-                        android:textColor="@color/grey_text"
-                        android:singleLine="true" />
-                    <TextView
-                        android:id="@+id/txtTel"
-                        android:text="xxx"
-                        android:textSize="@dimen/text_medium"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="left"
-                        android:textColor="@color/grey_text"
-                        android:singleLine="true" />
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtEmail"
+                            android:text="xxx"
+                            android:textSize="@dimen/text_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:textColor="@color/grey_text"
+                            android:singleLine="true" />
+                        <TextView
+                            android:text=" • "
+                            android:textSize="@dimen/text_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey_text" />
+                        <TextView
+                            android:id="@+id/txtTel"
+                            android:text="xxx"
+                            android:textSize="@dimen/text_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:textColor="@color/grey_text"
+                            android:singleLine="true" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
